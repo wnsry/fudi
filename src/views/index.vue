@@ -1,27 +1,19 @@
 <template>
   <div class="indmain">
-    <Header :actv="actv" class="top"></Header>
-    <router-view @torute="torute" class="cet"></router-view>
+    qqqqqqqqqqqqqqqqqqqqqqq
   </div>
 </template>
 
 <script>
-import Header from 'Components/headers.vue'
 
 export default {
   data () {
     return {
-      actv:0
     }
   },
   components: {
-    Header
   },
   methods:{
-    torute(num){
-      this.actv=num
-      console.log(num)
-    }
   }
 }
 </script>

@@ -7,10 +7,6 @@ import axios from 'axios'
 import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import { Swipe, SwipeItem, Loadmore ,InfiniteScroll } from 'mint-ui'
-import 'mint-ui/lib/style.css'
-// import Swiper from 'swiper';
-import 'swiper/dist/css/swiper.css';
 
 import Es6Promise from 'es6-promise'
 
@@ -21,11 +17,6 @@ import 'babel-polyfill'
 import {api, get, post ,postobj} from "./api/getdata"
 
 Vue.use(ElementUI);
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
-Vue.component(Loadmore.name, Loadmore);
-Vue.use(InfiniteScroll);
-// Vue.use(Swiper);
 
 Vue.prototype.$api = api;
 Vue.prototype.$get = get;
@@ -35,8 +26,6 @@ Vue.prototype.$postobj = postobj;
 Vue.config.productionTip = false
 
 axios.defaults.baseURL = '/api' // 本地
-// axios.defaults.baseURL = 'http://172.30.40.183:8081' // 服务器
-// axios.defaults.baseURL = 'http://172.16.3.3:9120' // 服务器
 
 /* eslint-disable no-new */
 axios.interceptors.request.use((config) => {
